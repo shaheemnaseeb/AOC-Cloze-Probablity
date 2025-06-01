@@ -9,7 +9,7 @@ public class AOC3 {
 	if (V1)
             if (V2)
                 R = R + 2;
-	      _____
+	_____
            R = R + 4;
 
         if (R == 7 && V1) {
