@@ -1,6 +1,6 @@
 package v1;
 
-public class AOC4 {
+public class AOC4_v1 {
     public static void main(String[] args) {
         boolean A = true;
         boolean B = false;

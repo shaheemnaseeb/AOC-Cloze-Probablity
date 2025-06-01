@@ -1,18 +1,15 @@
 package v1;
 
-public class AOC3 {
+public class AOC2_v1 {
     public static void main(String[] args) {
-        boolean V1 = (2 != 3);
-        boolean V2 = false;
-        int R = 3;
-        
-	if (V1)
-            if (V2)
-                R = R + 2;
-	_____
-           R = R + 4;
+        int V1 = 5;
+        int R  = 5;
 
-        if (R == 7 && V1) {
+        while (V1 > 0)
+            V1--;
+            _____;   
+
+        if (R == 6 && V1 == 0) {
       	    System.out.println("Correct atom reconstructed!");
         } else {
             System.out.println("Wrong, you didn’t input correctly");
