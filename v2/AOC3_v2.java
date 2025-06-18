@@ -1,36 +1,28 @@
 package v2;
 
-import java.util.Scanner;
-
 public class AOC3_v2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        boolean likesCoffee = true;
+        boolean likesTea = ______;
 
-        System.out.print("Do you like coffee? (true/false): ");
-        boolean likesCoffee = sc.nextBoolean();
-        System.out.print("Do you like tea?    (true/false): ");
-        boolean likesTea = sc.nextBoolean();
-
-        int R = 3;
+        int cup = 3;
         if (likesCoffee)
             if (likesTea)
-                R = R + 2;
-        _____ 
-            R = R + 4;
+                cup = cup + 2;
+                ______; // avoid filling this blank to achieve the result
+        else 
+           _____;
 
-        System.out.print("Do you like sugar? (true/false): ");
-        boolean likesSugar = sc.nextBoolean();
+        boolean likesSugar = true;
 
-        if (R == 7 && likesSugar) {
-            R++;
+        if (cup == 7 && likesSugar) {
+            cup++;
         }
 
-        if ((likesCoffee && !likesTea && R >= 7) || (likesCoffee && likesTea && R == 5)) {
-            System.out.println("✔ Correct atom reconstructed! R=" + R);
+        if (likesCoffee && !likesTea && R >= 7) {
+            System.out.println("✔ Correct atom reconstructed! cup=" + cup);
         } else {
-            System.out.println("✘ Wrong or missing dangling‐else atom (R=" + R + ")");
+            System.out.println("✘ Wrong or missing dangling‐else atom (cup=" + cup + ")");
         }
-
-        sc.close();
     }
 }
