@@ -1,7 +1,7 @@
 package v3;
 
 /**
- * BankFeeApp applies each transaction, then charges a fee _per day_.
+ * BankFeeApp applies each transaction, then charges a fee _per transaction_.
  * 
  * AOC2 is used in this program
  */

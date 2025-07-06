@@ -6,7 +6,7 @@ package v3;
  * 
  * AOC1 is used in this program
  */
-public class UserApp {
+public class RegisterUser {
     private static int lastId = 1000;
 
     public static int getNextId() {
