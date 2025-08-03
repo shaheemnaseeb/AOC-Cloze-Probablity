@@ -1,4 +1,4 @@
-package v4;
+package Final;
 
 /**
  * AnimalTypeApp classifies an animal:
