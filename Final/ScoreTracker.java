@@ -7,11 +7,16 @@ package Final;
  * AOC10 is used in this program
  */
 public class ScoreTracker {
-    public static int trackScores(int[] ______) {
-        int ______ = 0;
+    /**
+     * Track scores for each round and return the total.
+     * @param roundScores array of scores for each round
+     * @return the total score after all rounds
+     */
+    public static int trackScores(int[] roundScores) {
+        int total = 0;
         System.out.println("Round  Score  Total");
         System.out.println("-------------------");
-        for (int i = 0; i < roundScores.______; i++) {
+        for (int i = 0; i < roundScores.length; i++) {
             int points = roundScores[i];
             ______
             System.out.printf("%5d  %5d%n", points, total);
@@ -21,9 +26,9 @@ public class ScoreTracker {
 
     public static void main(String[] args) {
         int[] rounds = { 10, 15, 20, 5, 12 };
-        int ______ = trackScores(rounds);
+        int finalTotal = trackScores(rounds);
         System.out.println("-------------------");
-        System.out.println("Final total: " + ______);
+        System.out.println("Final total: " + finalTotal);
     }
 }
 

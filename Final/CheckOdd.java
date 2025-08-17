@@ -7,16 +7,21 @@ package Final;
  * AOC5 is used in this program
  */
 public class CheckOdd {
-    public static boolean isOdd(_____ number) {
+    /**
+     * Check if a number is odd.
+     * @param number the integer to check
+     * @return true if the number is odd, false otherwise
+     */
+    public static boolean isOdd(int number) {
         return _____;
     }
 
     public static void main(String[] args) {
-        int _____ = 15;
+        int number = 15;
         if (isOdd(number)) {
             System.out.println(number + " is odd");
         } else {
-            System.out.println(_____ + " is even");
+            System.out.println(number + " is even");
         }
     }
 }

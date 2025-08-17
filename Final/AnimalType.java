@@ -11,7 +11,14 @@ package Final;
  * AOC3 is used in this program
  */
 public class AnimalType {
-    public static String determineType(boolean _____, boolean laysEggs) {
+    /**
+     * Determine the type of animal based on its characteristics.
+     * 
+     * @param isWarmBlooded true if the animal is warm-blooded, false otherwise
+     * @param laysEggs true if the animal lays eggs, false otherwise
+     * @return a string representing the type of animal
+     */
+    public static String determineType(boolean isWarmBlooded, boolean laysEggs) {
         if (isWarmBlooded)
             _____ (laysEggs)
                 return "monotreme";
@@ -22,12 +29,12 @@ public class AnimalType {
 
     public static void main(String[] args) {
         boolean isWarmBlooded = true;
-        boolean _____     = false;
+        boolean laysEggs = false;
 
-        String classification = _____(isWarmBlooded, laysEggs);
+        String classification = determineType(isWarmBlooded, laysEggs);
         System.out.println("Classification: " + classification);
 
-        if ("mammal".equals(_____)) {
+        if ("mammal".equals(classification)) {
             System.out.println("✔ Correct classification.");
         } else {
             System.err.println("✘ Incorrect classification: " + classification);

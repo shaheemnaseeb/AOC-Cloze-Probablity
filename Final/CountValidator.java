@@ -7,20 +7,26 @@ package Final;
  * AOC7 is used in this program
  */
 public class CountValidator {
-    public static ______ processCounts(int initial) {
+
+    /**
+     * Process initial counts and return the sum if they match.
+     * @param initial the initial count value
+     * @return the sum of counts if they match, or -1 if they do not
+     */
+    public static int processCounts(int initial) {
         int firstCount, secondCount;
         ______
 
-        if (firstCount == ______) {
+        if (firstCount == secondCount) {
             return firstCount + secondCount;
         } else {
             System.err.println("Error: counts do not match!");
-            return ______;
+            return -1; // Indicating an error
         }
     }
 
     public static void main(String[] args) {
-        int result = ______(5);
+        int result = processCounts(5);
         System.out.println("Result = " + result);
     }
 }

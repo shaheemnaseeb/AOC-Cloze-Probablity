@@ -16,37 +16,42 @@ package Final;
 public class AccessApp {
     static class User {
         String name;
-        ______ active;
+        boolean active;
         boolean hasUserRole;
         boolean hasAdminRole;
 
-        User(String name, boolean ______, boolean hasUserRole, boolean hasAdminRole) {
+        User(String name, boolean active, boolean hasUserRole, boolean hasAdminRole) {
             this.name = name;
             this.active = active;
-            ______.hasUserRole = hasUserRole;
-            this.hasAdminRole = ______;
+            this.hasUserRole = hasUserRole;
+            this.hasAdminRole = hasAdminRole;
         }
     }
 
+    /**
+     * Check if the user has access based on their roles and active status
+     * @param user the user to check
+     * @return true if the user has access, false otherwise
+     */
     public static boolean hasAccess(User user) {
         return _____
     }
 
     public static void main(String[] args) {
-        ______[] users = {
+        User[] users = {
                 new User("Alice", true, true, false),
-                new ______("Bob", false, false, true),
+                new User("Bob", false, false, true),
                 new User("Carol", true, false, false)
         };
 
-        for (User user : ______) {
+        for (User user : users) {
             boolean can = hasAccess(user);
             System.out.printf("%s: access=%b%n", user.name, can);
         }
 
         // Validation check
         boolean ok = hasAccess(users[0]) && // Alice → true
-                ______(users[1]) && // Bob → true
+                hasAccess(users[1]) && // Bob → true
                 !hasAccess(users[2]); // Carol → false
 
         if (ok) {
